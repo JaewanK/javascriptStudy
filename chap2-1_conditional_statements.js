@@ -16,37 +16,37 @@ if (sale){
 } // sale 이 false 이므로 else문 실행 
 
 // comparison operator
-let hungerLevel = 7;
+const hungerLevel = 7;
 if(hungerLevel > 7){
-    console.log('Time to eat!')
+    console.log('Time to eat!');
 }else{
-    console.log('We can eat later.')
+    console.log('We can eat later.');
 } // 7하고 같으므로 else문 실행됨
 
 // logical operator
-let mood ='sleepy';
+const mood ='sleepy';
 let tirednessLevel = 9;
 if(mood ==='sleepy' && tirednessLevel >8){
-    console.log('time to sleep')
+    console.log('time to sleep');
 } else {
-    console.log('not bed time yet')
+    console.log('not bed time yet');
 }
 
 // or 문 혹은 부정문!
 tirednessLevel = 7
 if(mood !='sleepy' || tirednessLevel >8){ 
-    console.log('time to sleep')
+    console.log('time to sleep');
 } else {
-    console.log('not bed time yet')
+    console.log('not bed time yet');
 } //sleepy도 아니거나 8보다 큰가? 아니므로 else문 실행
 
 // Truthy & Falsy
 // non boolean의 경우 빈값이거나 9 nan 등일경우 false로 반환됨
-let numberOfApple = 0; // false
+const numberOfApple = 0; // false
 if (numberOfApple){
-    console.log('Let us eat apples')
+    console.log('Let us eat apples');
 } else {
-    console.log('No apples left')
+    console.log('No apples left');
 }
 
 // Truthy & Falsy assignment
@@ -61,10 +61,37 @@ console.log(`The ${writingUtensil} is mightier than the sword`);
 
 // Ternary operator (삼항조건연산자)
 // ?와 True일떄 : false일때 형태로 if문 형성 
-let isLocked = false;
+const isLocked = false;
 isLocked? console.log('door is locked') : console.log('door is opened');
 // isLocked가 false 이므로 콜론 뒤에 값이 실행됨
 
 // else if문 
+// if 문 equal은 === 3개 써야됨!
+const season = 'summer'
+if (season === 'winter'){
+    console.log('It\'s winter! Everything is covered in snow.');
+}else if (season === 'fall'){
+    console.log('It\'s fall! Leaves are falling!');
+}else if (season === 'summer'){
+    console.log('It\'s sunny and warm because it\'s summer!');
+}else if (season === 'spring'){
+    console.log('It\'s spring! The trees are budding!');
+}
 
+// switch keyword
+const athleteFinalPosition = '';
+switch(athleteFinalPosition){
+    case 'first place':
+        console.log('You get the gold medal!');
+        break;
+    case 'second place':
+        console.log('You get the silver medal!');
+        break;
+    case 'third place':
+        console.log('You get the bronze medal!');
+        break;
+    default:
+        console.log('No medal awarded.');
+        break;
+}
 
