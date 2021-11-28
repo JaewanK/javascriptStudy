@@ -34,7 +34,7 @@ if(mood ==='sleepy' && tirednessLevel >8){
 
 // or 문 혹은 부정문!
 tirednessLevel = 7
-if(mood !='sleepy' || tirednessLevel >8){ 
+if(mood !=='sleepy' || tirednessLevel >8){ 
     console.log('time to sleep');
 } else {
     console.log('not bed time yet');
