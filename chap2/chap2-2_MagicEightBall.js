@@ -1,6 +1,6 @@
 const userName = 'JAYK';
 
-userName? console.log(`Hello,${userName}`) : console.log('Hello');
+userName ? console.log(`Hello,${userName}`) : console.log('Hello');
 
 const userQuestion ='Am I doing well?';
 
