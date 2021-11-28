@@ -62,7 +62,7 @@ console.log(`The ${writingUtensil} is mightier than the sword`);
 // Ternary operator (삼항조건연산자)
 // ?와 True일떄 : false일때 형태로 if문 형성 
 const isLocked = false;
-isLocked? console.log('door is locked') : console.log('door is opened');
+isLocked ? console.log('door is locked') : console.log('door is opened');
 // isLocked가 false 이므로 콜론 뒤에 값이 실행됨
 
 // else if문 
