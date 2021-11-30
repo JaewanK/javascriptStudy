@@ -1,7 +1,7 @@
 // 유저가 낼 가위바위보 
 
 const getUserChoice = userInput => {
-    // 매개변수는 iserInput
+    // 매개변수는 userInput
     userInput = userInput.toLowerCase(); // 대소문자 무관하게 설정
     switch(userInput){
       case 'rock':
