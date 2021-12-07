@@ -1,17 +1,17 @@
 // 유저가 낼 가위바위보 
 
 const getUserChoice = userInput => {
-    // 매개변수는 userInput
-    userInput = userInput.toLowerCase(); // 대소문자 무관하게 설정
-    switch(userInput){
+    // 매개변수는 iserInput
+    const input = userInput.toLowerCase(); // 대소문자 무관하게 설정
+    switch(input){
       case 'rock':
-        return userInput; // 인자가 rock이면 결과값을 rock로
+        return input; // 인자가 rock이면 결과값을 rock로
       case 'paper':
-        return userInput; // 인자가 paper이면 결과값을 paper로
+        return input; // 인자가 paper이면 결과값을 paper로
       case 'scissors':
-        return userInput; // 인자가 scissors이면 결과값을 scissors로
+        return input; // 인자가 scissors이면 결과값을 scissors로
       case 'bomb':
-        return userInput; // 치트키 bomb
+        return input; // 치트키 bomb
       default:
         console.log('Value Error'); // 3개중에 없으면 error 발생
     }
@@ -21,14 +21,14 @@ const getUserChoice = userInput => {
 
 // 컴퓨터의 가위바위보
 const getComputerChoice = () => {
-    num = Math.floor(Math.random()*3); // 0~3 사이의 정수 (3은 포함x)
+    const num = Math.floor(Math.random()*3); // 0~3 사이의 정수 (3은 포함x)
     switch(num){
         case 0:
-        return 'rock';
+            return 'rock';
         case 1:
-        return 'paper';
+            return 'paper';
         case 2:
-        return 'scissors';
+            return 'scissors';
     }
 }
 
